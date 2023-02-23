@@ -1,0 +1,142 @@
+:root {
+  --basic-color: #2e2f42;
+  --secondary-color: #ffffff;
+  --primary-brand-color: #4d5ae5;
+  --pressed-state-color: #404bbf;
+  --text-color: #434455;
+  --accent-color: #e7e9fc;
+  --accent-light-color: #f4f4fd;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--basic-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: 0.04em;
+}
+.first-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.description {
+  color: var(--text-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand-color);
+}
+
+/* -------header------ */
+.header-link:hover,
+.header-link:focus,
+.adress-link:hover,
+.adress-link:focus {
+  color: var(--pressed-state-color);
+}
+/* navigation */
+.header-logo {
+  line-height: 1.33;
+}
+.header-logo > span {
+  color: var(--basic-color);
+}
+.header-link {
+  color: var(--basic-color);
+  font-weight: 500;
+}
+.header-link.current {
+  color: var(--pressed-state-color);
+}
+/* adress */
+.adress-link {
+  font-style: normal;
+  color: var(--text-color);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--basic-color);
+}
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--secondary-color);
+}
+.hero-btn {
+  background-color: var(--primary-brand-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--primary-brand-color);
+}
+
+/*Team */
+.team {
+  background-color: var(--accent-light-color);
+}
+
+/* Footer  */
+.footer {
+  background-color: var(--basic-color);
+}
+.footer-logo {
+  line-height: 1.7;
+}
+.footer-logo > span {
+  color: var(--secondary-color);
+}
+.footer-description {
+  color: var(--accent-color);
+}
+
+/* filter portfolio */
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background-color: var(--pressed-state-color);
+  color: var(--secondary-color);
+  border-color: var(--pressed-state-color);
+}
+.portfolio-btn {
+  color: var(--primary-brand-color);
+  background-color: var(--accent-light-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
