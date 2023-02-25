@@ -23,6 +23,8 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -108,6 +110,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 .header-navigation {
   display: flex;
 }
@@ -167,7 +170,7 @@ body {
 .benefits-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  column-gap: 24px;
 }
 
 .benefits {
@@ -181,7 +184,7 @@ body {
 .work-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  column-gap: 24px;
 }
 
 .work-title,
@@ -197,7 +200,6 @@ body {
 .team-list {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   gap: 24px;
   flex-basis: calc ((100%-3 * 24)/4);
 }
