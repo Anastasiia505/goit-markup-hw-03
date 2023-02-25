@@ -98,6 +98,9 @@ body {
 }
 
 /* -------header------ */
+.header {
+  border-bottom: 1px solid var(--accent-color);
+}
 .header-link:hover,
 .header-link:focus,
 .adress-link:hover,
@@ -176,7 +179,7 @@ body {
 .benefits {
   padding-top: var(--section-padding);
 }
-.benefits-description {
+.benefits-item {
   width: 264px;
 }
 
@@ -201,10 +204,13 @@ body {
   display: flex;
   align-items: center;
   gap: 24px;
-  flex-basis: calc ((100%-3 * 24)/4);
 }
 .team {
   background-color: var(--accent-light-color);
+  padding-top: var(--section-padding);
+}
+.team-item {
+  flex-basis: calc ((100%-3 * 24)/4);
 }
 
 .team-signature {
@@ -222,6 +228,7 @@ body {
 }
 .footer-logo {
   line-height: 1.7;
+  margin-bottom: 100px;
 }
 .footer-logo > span {
   color: var(--secondary-color);
@@ -234,9 +241,6 @@ body {
 /*---------------- portfolio------------- */
 .portfolio {
   padding-top: 96px;
-}
-.header-portfolio {
-  border-bottom: 1px solid var(--accent-color);
 }
 
 .portfolio-btn:hover,
@@ -264,14 +268,15 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc((100%-48px) / 3);
   column-gap: 24px;
   row-gap: 48px;
 }
+.portfolio-item {
+  flex-basis: calc ((100%-2 * 24)/3);
+}
+
 .portfolio-signature {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  padding: 32px 16px;
   border: 1px solid var(--accent-color);
   border-top: none;
 }
