@@ -152,6 +152,7 @@ body {
 .hero {
   background-color: var(--basic-color);
   padding: 188px 0;
+  text-align: center;
 }
 .hero-title {
   font-size: 56px;
@@ -159,16 +160,14 @@ body {
   color: var(--secondary-color);
   width: 496px;
   margin: 0 auto 48px auto;
-  text-align: center;
 }
 .hero-btn {
-  display: block;
   background-color: var(--primary-brand-color);
   color: var(--secondary-color);
   border: 1px solid var(--primary-brand-color);
   padding: 16px 32px;
-  margin: 0 auto;
 }
+
 /*--------------- benefits------------*/
 .benefits-list {
   display: flex;
@@ -210,7 +209,7 @@ body {
   padding-top: var(--section-padding);
 }
 .team-item {
-  flex-basis: calc ((100%-3 * 24)/4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .team-signature {
@@ -228,7 +227,8 @@ body {
 }
 .footer-logo {
   line-height: 1.7;
-  margin-bottom: 100px;
+  margin-bottom: 16px;
+  display: inline-block;
 }
 .footer-logo > span {
   color: var(--secondary-color);
@@ -272,7 +272,7 @@ body {
   row-gap: 48px;
 }
 .portfolio-item {
-  flex-basis: calc ((100%-2 * 24)/3);
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 .portfolio-signature {
